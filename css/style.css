@@ -45,9 +45,10 @@ ul.nav>li>a:hover {
 }
 
 .navbar-nav>li>a {
-    padding-top: 32px;
-    padding-bottom: 22px;
+     padding-bottom: 12px;
+    padding-top: 12px;
     text-transform: uppercase;
+	line-height: 35px;
 }
 #trueHeader #logo {
     float: left;
@@ -64,7 +65,7 @@ ul.nav>li>a:hover {
 	text-align: center;
 }
 
-.navbar-default {}
+.navbar-default { margin-top: 10px;}
 
 .dropdown-submenu {
     position: relative;
@@ -153,10 +154,13 @@ ul.nav>li>a:hover {
     margin: 0 auto;
 }
 .banner{
-	 background: url("../images/bg.jpg") no-repeat;
-position: relative;
-min-height: 600px;
-max-height: 600px;
+	 background: rgba(0, 0, 0, 0) url("../images/bg.jpg") no-repeat scroll 0 0;
+    float: left;
+    max-height: 600px;
+    min-height: 600px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
 }
 .welcome{
 	 background: #13afeb;
@@ -167,14 +171,21 @@ border-top: 1px solid #0f9fd7;
 border-bottom: 1px solid #0f9fd7;
 	text-align: center
 }
-.welcome h1{ margin: 0; color: inherit;}
+.welcome h1{ 
+	color: inherit;
+    margin: 0;
+    float: left;
+    width: 100%;
+    padding: 40px 0 30px 0;
+}
 .text-center{ text-align: center;}
 .welcome p {
     padding: 30px 0;
-font-size: 16px;
-width: 60%;
-margin: 0 auto;
-padding-bottom: 60px;
+    font-size: 16px;
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    position: relative;
 }
 
 .one_third p {
@@ -440,10 +451,15 @@ margin-right: -80px;
 .navbar-nav {
     
 }
-#trueHeader{ height: 83px; overflow: hidden;}
+#trueHeader {
+    height:auto;
+    float: left;
+    width: 100%;
+	background: #fff;
+}
 .page_title2 {
     float: left;
-    padding: 40px 0 28px;
+    padding: 20px 0 28px;
     position: relative;
     width: 100%;
 }
@@ -722,6 +738,550 @@ scection.client {
 }
 .rw-sentence {
     margin: 0;
+}
+
+ul.nav > li > a.active {
+    background-color: rgb(19, 175, 235);
+    color: rgb(255, 255, 255);
+}
+ul.nav > li > a.active:hover {
+    background-color: rgb(19, 175, 235);
+    color: rgb(255, 255, 255);
+}
+ul.nav > li > a:hover {
+    color: rgb(19, 175, 235);
+}
+.yamm .nav, .yamm .collapse, .yamm .dropup, .yamm .dropdown {
+    position: static;
+}
+.yamm .container {
+    position: relative;
+}
+.yamm .dropdown-menu {
+    left: auto;
+}
+.yamm .nav.navbar-right .dropdown-menu {
+    left: auto;
+    right: 0;
+}
+.yamm .yamm-content {
+    padding: 20px 30px;
+}
+.yamm .dropdown.yamm-fw .dropdown-menu {
+    left: 0;
+    right: 0;
+}
+.yamm .dropdown.yamm-hw .dropdown-menu {
+    left: auto;
+    right: 0;
+    width: 550px;
+}
+.yamm .yamm-content .col-md-4, .yamm .yamm-content .col-md-8 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.yamm .yamm-content .thumbnail {
+    border: 0 none;
+    padding: 0;
+}
+.yamm .yamm-content .caption {
+    padding: 0;
+}
+.yamm .yamm-content .caption h3 {
+    color: rgb(39, 39, 39);
+    font-size: 18px;
+    margin-bottom: 8px;
+    margin-top: 14px;
+}
+.yamm .yamm-content .caption p {
+    color: rgb(114, 114, 114);
+    font-size: 14px;
+}
+.list-unstyled li:first-child {
+    border-bottom: 1px solid rgb(230, 230, 230);
+    margin-bottom: 12px;
+}
+.list-unstyled li p {
+    color: rgb(39, 39, 39);
+    font-size: 16px;
+    font-weight: normal;
+}
+.list-unstyled li i {
+    color: rgb(114, 114, 114);
+}
+.list-unstyled li {
+    padding: 5px 0;
+}
+.list-unstyled a {
+    color: rgb(39, 39, 39);
+    padding: 4px 8px;
+    transition-duration: 0.3s;
+    transition-property: margin-left, background-color;
+    transition-timing-function: ease-out;
+    width: 100%;
+}
+.list-unstyled a:hover {
+    background-color: rgb(238, 238, 238);
+    border-radius: 3px;
+    color: rgb(39, 39, 39);
+    margin-left: 8px;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    transition-property: margin-left, background-color;
+    transition-timing-function: ease-out;
+}
+.list-unstyled a::before {
+    font-size: 12px;
+    margin-right: 5px;
+}
+.row-border + .row .caption h3 {
+    margin-top: 0;
+}
+.row-border {
+    border-bottom: 1px solid rgb(209, 209, 209);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+.login_form {
+    background-color: rgb(249, 249, 249);
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    display: block;
+    float: left;
+    margin: 20px auto 50px;
+    padding: 20px 35px 13px;
+    width: 400px;
+}
+.sky-form footer {
+    display: block;
+    padding: 15px 0 25px;
+	border: none;
+}
+.sky-form .fright {
+    float: right;
+}
+.sky-form .button:hover {
+    opacity: 1;
+}
+.sky-form .button.button-secondary {
+    background-color: rgb(179, 179, 179);
+    margin-right: 10px;
+}
+.sky-form header {
+    border-bottom: 1px solid rgb(227, 227, 227);
+    color: rgb(39, 39, 39);
+    display: block;
+    font-family: "Raleway",sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 13px;
+    padding: 0 0 9px;
+}
+
+.sky-form .icon-append {
+    border-left-style: solid;
+    border-left-width: 1px;
+    padding-left: 3px;
+    right: 5px;
+}
+.sky-form .note {
+    color: rgb(153, 153, 153);
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.dropdown-menu > li > a {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+.dropdown-menu{ min-width: 220px;}
+.list-unstyled, .list-unstyled ul {
+    min-width: 120px;
+}
+.sky-form .tooltip-bottom-right {
+    margin-top: 15px;
+    top: 100%;
+}
+.sky-form .tooltip {
+    background: rgba(0, 0, 0, 0.9) none repeat scroll 0 0;
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+    font-weight: 400;
+    left: -9999px;
+    line-height: 16px;
+    opacity: 0;
+    padding: 2px 8px 3px;
+    position: absolute;
+    transition: margin 0.3s ease 0s, opacity 0.3s ease 0s;
+    z-index: 1;
+}
+.reg_form {
+     background-color: rgb(249, 249, 249);
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    float: left;
+    margin: 20px auto 40px;
+    padding: 20px 35px 13px;
+    width: 550px;
+}
+.sky-form .state-success select + i {
+    background: rgb(240, 255, 240) none repeat scroll 0 0;
+    box-shadow: 0 0 0 12px rgb(240, 255, 240);
+}
+.sky-form .select i {
+    background: rgb(255, 255, 255) none repeat scroll 0 0;
+    box-shadow: 0 0 0 12px rgb(255, 255, 255);
+    height: 11px;
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    width: 5px;
+}
+.sky-form .select i::after {
+    border-top: 4px solid rgb(64, 64, 64);
+    bottom: 0;
+}
+.sky-form .select i::after, .sky-form .select i::before {
+    border-left: 4px solid rgba(0, 0, 0, 0);
+    border-right: 4px solid rgba(0, 0, 0, 0);
+    content: "";
+    position: absolute;
+    right: 0;
+}
+.sky-form .select i::before {
+    border-bottom: 4px solid rgb(64, 64, 64);
+    top: 0;
+}
+.sky-form .select i::after, .sky-form .select i::before {
+    border-left: 4px solid rgba(0, 0, 0, 0);
+    border-right: 4px solid rgba(0, 0, 0, 0);
+    content: "";
+    position: absolute;
+    right: 0;
+}
+
+.page_title {
+    background: rgb(39, 39, 39) url("../images/h-line1.png") no-repeat scroll center bottom;
+    border-top: 5px solid rgb(19, 175, 235);
+    color: rgb(153, 153, 153);
+    float: left;
+    font-size: 14px;
+    padding: 50px 0 35px;
+    text-align: center;
+    width: 100%;
+}
+.page_title h1 {
+    color: rgb(19, 175, 235);
+    font-size: 45px;
+    font-weight: 300;
+    margin-bottom: 13px;
+    text-transform: uppercase;
+}
+.we_support{
+	float: left;
+    padding: 59px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.cbp-item-wrapper {
+    position:relative;
+	transition: transform 0.6s ease-in-out 0s;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	border: 1px solid #e3e3e3;
+}
+.cbp-l-grid-projects .cbp-caption {
+    height: 68%;
+    margin-bottom: 0;
+}
+.cbp-caption, .cbp-caption-activeWrap, .cbp-caption-defaultWrap {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+}
+.cbp-caption-overlayBottomPush .cbp-caption-activeWrap, .cbp-caption-overlayBottomPush .cbp-caption-defaultWrap {
+    bottom: 0;
+    transition: bottom 0.6s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+}
+.cbp-caption-activeWrap, .cbp-caption-defaultWrap {
+    position: absolute;
+    z-index: 1;
+}
+.cbp-caption, .cbp-caption-activeWrap, .cbp-caption-defaultWrap {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+}
+.cbp-caption:hover .cbp-caption-activeWrap{ display: block;   position: relative;
+    transition: left 0.4s cubic-bezier(0.19, 1, 0.22, 1) 0s;}
+
+
+.cbp-caption-defaultWrap img {
+    vertical-align: middle;
+    width: 100%;
+}
+.threeborder {
+    padding: 18px 0px;
+    border-top: none;
+}
+.cbp-l-grid-projects-title {
+    color: rgb(39, 39, 39);
+    font: 14px sans-serif;
+    text-transform: uppercase;
+}
+.cbp-l-grid-projects-desc {
+    color: rgb(114, 114, 114);
+    font: 400 14px sans-serif;
+    margin-top: 6px;
+}
+
+.cbp-item{
+	position:relative;
+	transition: transform 0.6s ease-in-out 0s;
+}
+
+.cbp-caption-activeWrap {
+    background: rgb(51, 51, 51) none repeat scroll 0 0;
+    display: none;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+	height: 60px;
+}
+.cbp-l-caption-buttonLeft, .cbp-l-caption-buttonRight {
+    background-color: rgb(255, 255, 255);
+    color: rgb(39, 39, 39);
+    display: inline-block;
+    font: 12px/28px sans-serif;
+    margin: 4px;
+    text-align: center;
+    text-decoration: none;
+    width: 90px;
+}
+
+
+
+.cbp-l-caption-alignCenter .cbp-l-caption-body {
+    display: block;
+    padding: 12px 0;
+    text-align: center;
+    vertical-align: middle;
+	
+}
+._services{ width:100%; float: left; display: block; padding: 50px 0;}
+
+._issue ul {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.margin_top4 {
+    float: left;
+    margin-top: 40px;
+    width: 100%;
+}
+
+._issue li.icon2 {
+    background-color: rgb(19, 175, 235);
+    border-radius: 100%;
+    color: rgb(255, 255, 255);
+    float: left;
+    font-size: 27px;
+    height: 40px;
+    line-height: 38px;
+    margin-right: 18px;
+    text-align: center;
+    vertical-align: middle;
+    width: 40px;
+}
+._issue li.text2 {
+    float: left;
+    width: 84%;
+}
+
+._issue li h4 {
+    margin-bottom: 8px;
+	font-size: 22px;
+}
+scection._issue {
+    border-top: 1px dashed rgb(204, 204, 204);
+    float: left;
+    margin-top: 30px;
+    padding: 80px 0 60px;
+    width: 100%;
+	
+}
+
+._feature._issue {
+    border-top: 1px dashed rgb(204, 204, 204);
+    float: left;
+    overflow: hidden;
+    padding: 50px 0 70px;
+    width: 100%;
+	background: rgba(239, 239, 239, 0.5) none repeat scroll 0 0;
+}
+.rw-sentence h4{color: #fff;}
+
+
+.product-grid {
+    border: 1px solid rgb(233, 233, 233);
+    float: left;
+    margin: 0 4% 4% 0;
+    position: relative;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+}
+.product-grid:hover {
+    box-shadow: 0 1px 11px rgb(219, 219, 219);
+    z-index: 1;
+}
+.last-grid {
+    margin-right: 0;
+}
+.product-pic a img {
+    display: block;
+    margin: 0 auto;
+	width: 100%;
+}
+.product-grid-head {
+    float: left;
+    padding: 1em;
+}
+.product-pic p {
+    color: rgb(214, 214, 214);
+    padding:1em;
+	min-height: 100px;
+}
+.product-pic p span {
+    color: rgb(153, 153, 153);
+    font-size: 1em;
+}
+.product-pic p a {
+    color: rgb(85, 85, 85);
+    display: block;
+    font-size: 19px;
+}
+.product-pic p a small {
+    font-size: 0.8em;
+}
+.product-info-cust {
+    float: left;
+    padding: 0.5em 1em;
+    text-align: center;
+    width: 53%;
+}
+.product-info-cust a {
+    color: rgb(42, 35, 35);
+    font-size: 0.875em;
+    font-weight: 600;
+    text-transform: uppercase;
+	float:left;
+	width: 100%;
+}
+.product-info-price {
+    background: rgb(255, 255, 255) none repeat scroll 0 0;
+    float: right;
+    padding: 0.545em;
+    text-align: center;
+    width: 27%;
+}
+.product-info-price a {
+    color: rgb(42, 35, 35);
+    font-weight: 700;
+}
+.product-info {
+    background: rgb(236, 236, 236) url("../images/price-border.png") repeat-y scroll 0 0;
+    border-top: 1px solid rgb(233, 233, 233);
+	float: left;
+	width: 100%;
+}
+
+
+.positioner {
+	position: relative;
+	display: inline-block;
+	line-height: 0;
+}
+
+.starbox .colorbar,
+.starbox .ghost {
+	z-index: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.starbox .stars {
+	display: inline-block;
+}
+
+.starbox .stars .star_holder {
+	position: relative;
+	z-index: 1;
+}
+
+.starbox .stars .star_holder .star {
+	display: inline-block;
+	vertical-align: baseline;
+	background-repeat: no-repeat;
+}
+.product-pic {
+    display:inline-block;
+	float: left;
+	width: 100%;
+}
+
+/* Override with your own image and sizeâ€¦ */
+.starbox .stars .star_holder .star {
+	background-image: url('https://github.com/sabberworm/jStarbox/raw/master/images/5-small.png');
+	width:18px;
+	height:18px;
+}
+.starbox{
+	float:left;
+}
+.block span{
+	color: #A5A5A5;
+	float: left;
+	margin: 0 0 0 0.5em;
+	font-size: 0.875em;
+}
+/* Override with your own coloursâ€¦ */
+.starbox .stars { background: #cccccc; }
+.starbox .rated .stars { background: #dcdcdc; }
+.starbox .rated.hover .stars { background: #cccccc; }
+.starbox .colorbar { background: #FFD596; }
+.starbox .hover .colorbar { background: #ffcc1c; }
+.starbox .rated .colorbar { background: #64b2ff; }
+.starbox .rated.hover .colorbar { background: #FFD596; }
+.starbox .ghost { background: #a1a1a1; }
+.we_product{ float: left;
+    padding: 60px 0;
+    position: relative;
+    width: 100%;}
+
+.more-product-info span {
+    background: rgba(0, 0, 0, 0) url("../images/image-sprit.png") no-repeat scroll -30px -155px;
+    cursor: pointer;
+    display: block;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
 }
 
 
